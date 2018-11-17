@@ -1,0 +1,18 @@
+.contact-header {
+  text-align: right;
+}
+
+.contact-header__tel {
+  display: block;
+  font: 400 16px $neumann;
+  text-decoration: none;
+  color: $white;
+}
+
+.contact-header__call {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #d6977e;
+  text-decoration: underline;
+}

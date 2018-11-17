@@ -1,0 +1,60 @@
+.developer {
+  background: #26252d;
+  @media(min-width: $screen-xl) {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #2f2e37;
+  }
+}
+
+.developer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  padding-bottom: 35px;
+  margin: 0 -15px;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $screen-xl) {
+    // margin: 0 -55px;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 19px;
+  }
+}
+
+.developer__text {
+  display: inline-block;
+  margin: 0 0 46px;
+  color: #fdf9ec;
+  font-size: 12px;
+  font: 400 12px/23px "Geometria", "Arial", sans-serif;
+  line-height: 23px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 0px;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-left: 38px;
+  }
+}
+
+.developer__logo {
+  display: block;
+
+  @media(min-width: $screen-xl) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

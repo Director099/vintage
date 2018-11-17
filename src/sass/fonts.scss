@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Gilroy';
+  src:  url('../fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src:  url('../fonts/gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neumann';
+  src:  url('../fonts/neumann/td-neumann.woff2') format('woff2'),
+        url('../fonts/neumann/td-neumann.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

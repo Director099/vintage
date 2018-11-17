@@ -1,0 +1,38 @@
+// Style plagin
+@import "variables";
+
+@import "../../node_modules/normalize.css/normalize.css";
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+// My style
+
+
+// @import "grid-mixins";
+
+@import "functions";
+
+@import "fonts";
+@import "global";
+
+@import "src/blocks/companents/scrollUp/scrollUp";
+@import "src/blocks/companents/title/title";
+@import "src/blocks/companents/form-doc/form-doc";
+@import "src/blocks/companents/btn/btn";
+@import "src/blocks/companents/form-checkbox/form-checkbox";
+
+@import "src/blocks/project/page-header/page-header";
+@import "src/blocks/project/page-footer/page-footer";
+@import "src/blocks/project/developer/developer";
+@import "src/blocks/project/fullpage/fullpage";
+@import "src/blocks/project/contact-header/contact-header";
+@import "src/blocks/project/main-block/main-block";
+@import "src/blocks/project/form-callback/form-callback";
+@import "src/blocks/project/description/description";
+@import "src/blocks/project/advantages/advantages";
+@import "src/blocks/project/all-service/all-service";
+@import "src/blocks/project/rubric/rubric";
+@import "src/blocks/project/service/service";
+

@@ -1,0 +1,4 @@
+.rubric {
+  @include make-row();
+  justify-content: center;
+}

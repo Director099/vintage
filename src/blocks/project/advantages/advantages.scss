@@ -1,0 +1,18 @@
+.advantages {
+  @include ul-none();
+  @include make-row();
+}
+
+.advantages__item {
+  padding-left: 80px;
+  background: url("../img/success.png") no-repeat left center /contain;
+}
+
+.advantages__text {
+  font: 400 21px $neumann;
+}
+
+.advantages__time {
+  margin: 0;
+  font-size: 16px;
+}

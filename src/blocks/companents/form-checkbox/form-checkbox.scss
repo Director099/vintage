@@ -1,0 +1,45 @@
+.form-checkbox {
+  position: relative;
+  display: inline-block;
+  color: $white;
+  padding-left: 25px;
+  font-size: 10px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.form-checkbox input {
+  display: none;
+}
+
+.form-checkbox input:checked + .form-checkbox__check::after {
+  transform: scale(-1);
+}
+
+.form-checkbox__check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #3f3e4d;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-top: -3.5px;
+    margin-left: -3.5px;
+    transform: scale(0);
+    width: 7px;
+    height: 7px;
+    background: #cb937f;
+    border-radius: 50%;
+    transition: $time;
+  }
+}

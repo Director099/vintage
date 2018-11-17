@@ -1,0 +1,68 @@
+.form-doc {
+  position: relative;
+  display: inline-block;
+
+  &--tel {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #3f3e4d url("../img/sprite/call-answer.svg") no-repeat center / 10px;
+    }
+  }
+
+  &:focus {
+    outline: none
+  }
+}
+
+.form-doc__input {
+  line-height: 12px;
+  padding: 9px 10px 9px 50px;
+  display: block;
+  width: 100%;
+  min-height: 25px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #f9ad8d;
+  background: transparent;
+  color: $white;
+  letter-spacing: 1px;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #a7a8be;
+  }
+}
+
+.form-doc__input + span {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  opacity: .5;
+  cursor: text;
+  z-index: 1;
+  transition: .3s;
+}
+
+.form-doc__input:focus + span {
+  font-size: 9px;
+  transform: translateY(-18px);
+}
+
+.form-doc__input--active + span {
+  font-size: 9px;
+  transform: translateY(-18px);
+}
+
+.form-doc__input.error {
+  border-bottom-color: #ff9090;
+}

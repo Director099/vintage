@@ -1,0 +1,23 @@
+.main-block {
+  max-width: 350px;
+}
+
+.main-block__title {
+  font: 400 52px $neumann;
+  color: $white;
+}
+
+.main-block__title span {
+  color: #f9ad8d;
+}
+
+.main-block__size {
+  font-size: 68px;
+}
+
+.main-block__tagline {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 50px;
+  color: $white;
+}
