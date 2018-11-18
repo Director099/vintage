@@ -1,0 +1,45 @@
+.form-mess {
+  margin-top: 12px;
+}
+
+.form-mess__ident {
+  margin-bottom: 34px;
+}
+
+.form-mess__btn {
+  display: block;
+  width: 100%;
+  padding: 19px;
+  max-width: 250px;
+}
+
+.form-mess__row {
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+.form-mess__size {
+  font-size: 12px;
+}
+
+.form-mess .form-doc__input {
+  color: $black;
+  font-size: 16px;
+  padding: 9px 10px 15px 40px;
+  letter-spacing: 0;
+}
+
+.form-mess .form-doc__textarea {
+  letter-spacing: 0;
+  padding: 9px 10px 15px 40px;
+  font-size: 16px;
+  color: $black;
+}
+
+.form-mess .form-doc__input::placeholder {
+  color: #333;
+}
+
+.form-mess .form-doc__textarea::placeholder {
+  color: #333;
+}

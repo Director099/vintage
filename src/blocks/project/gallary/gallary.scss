@@ -1,0 +1,123 @@
+@mixin arrow() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #242424 !important;
+  color: $white !important;
+  font-size: 40px !important;
+}
+
+.gallary {
+
+}
+
+.gallary__img {
+  display: block;
+  position: relative;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
+
+  &--video {
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-65%);
+      width: 64px;
+      height: 64px;
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.26);
+      border-radius: 50%;
+      background: #c0846d url("../img/sprite/play.svg") no-repeat center/15px;
+    }
+  }
+
+  &--after {
+    &::after {
+      content: "До";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-85%);
+      font: 400 86px/86px $neumann;
+      opacity: 0.2;
+      color: $white;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+  }
+
+  &--before {
+    &::before {
+      content: "После";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-85%);
+      font: 400 86px/86px $neumann;
+      opacity: 0.2;
+      color: $white;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+  }
+}
+
+.gallary__desc {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  padding: 25px 25px 25px;
+  min-height: 115px;
+  background: rgba($black, 0.6);
+  box-shadow: 0px 0 30px 17px rgba(0, 0, 0, 0.6);
+}
+
+.gallary__title {
+  color: $white;
+  font: 400 21px/25px $neumann;
+}
+
+.gallary__text {
+  margin: 0;
+  color: #9d9da4;
+  font: 300 14px/21px $gilroy;
+}
+
+.gallary .owl-dot span {
+  width: 18px;
+  height: 17px;
+  border: 2px solid #e59c7d;
+  border-radius: 0 !important;
+  background: transparent !important;
+  transform: rotate(45deg);
+}
+
+.gallary .owl-dot.active span {
+  background-color: #e59c7d !important;
+}
+
+.gallary .owl-dots {
+  margin-top: 40px;
+}
+
+.gallary .owl-nav .owl-prev {
+  @include arrow();
+  left: -73px;
+}
+
+.gallary .owl-nav  {
+  margin: 0 !important;
+}
+
+.gallary .owl-nav .owl-next {
+  @include arrow();
+  right: -73px;
+}

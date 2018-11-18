@@ -14,13 +14,13 @@ $border-radius:               rem(3px) !default;
 
 .field-file {
 
-  $block-name:                &; // #{$block-name}__element
+  // $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 
   &__name {
-    @include field-name;
+    // @include field-name;
   }
 
   &__input-wrap {
@@ -36,45 +36,52 @@ $border-radius:               rem(3px) !default;
 
     &:active ~ .field-file__name-text,
     &:focus ~ .field-file__name-text {
-      @include field-focus;
+      // @include field-focus;
     }
   }
 
   &__name-text {
     position: relative;
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
-    background-color: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    background-color: transparent;
     white-space: nowrap;
-    overflow: hidden;
+    // overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
+    font-size: 10px;
+    padding-left: 30px;
+    min-height: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      // transform: translateY(-50%);
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icon-img.png") no-repeat center / contain;
+    }
 
     &:before {
       content: attr(data-button-text);
       display: block;
-      background-color: $gray-lightest;
-      border-right: 1px solid $border-color;
       margin-right: $field-padding-horizontal;
-      line-height: $line-height;
-      padding: $field-padding-vertical  $field-padding-horizontal;
-      border-top-left-radius: $border-radius;
-      border-bottom-left-radius: $border-radius;
-    }
-
-    &:hover,
-    &:focus {
-
-      &:before {
-        background-color: darken($gray-lightest, 10%); // как у обычных кнопок
-      }
+      padding: 0;
+      font-size: 14px;
+      line-height: 1;
+      border-bottom: 1px solid #333333;
     }
   }
 
+  &--white {
+    color: $white;
+  }
+
   &__help-text {
-    @include field-help-text;
+    // @include field-help-text;
   }
 }

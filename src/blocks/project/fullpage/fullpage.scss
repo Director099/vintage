@@ -1,4 +1,10 @@
 .fullpage {
   background: url("../img/header-bg.jpg") no-repeat top center / cover;
   min-height: 770px;
+  height: 100vh;
+}
+
+.fullpage__container {
+  position: relative;
+  height: 100%;
 }

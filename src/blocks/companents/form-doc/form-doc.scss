@@ -1,17 +1,41 @@
+@mixin circle() {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
 .form-doc {
   position: relative;
-  display: inline-block;
+  display: block;
 
   &--tel {
     &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: #3f3e4d url("../img/sprite/call-answer.svg") no-repeat center / 10px;
+      @include circle();
+      background: #3f3e4d url("../img/sprite/call-answer.svg") no-repeat center / 13px;
+    }
+  }
+
+  &--name {
+    &::after {
+      @include circle();
+      background: #3f3e4d url("../img/main-user.png") no-repeat center / 10px;
+    }
+  }
+
+  &--message {
+    &::after {
+      @include circle();
+      background: #3f3e4d url("../img/message.png") no-repeat center / 10px;
+    }
+  }
+
+  &--orange {
+    &::after {
+      background-color: #f9ad8d;
     }
   }
 
@@ -20,9 +44,31 @@
   }
 }
 
+.form-doc__textarea {
+  padding: 9px 10px 15px 50px;
+  display: block;
+  width: 100%;
+  min-height: 25px;
+  font-size: 18px;
+  border: none;
+  height: 46px;
+  resize: none;
+  border-bottom: 1px solid #f9ad8d;
+  background: transparent;
+  letter-spacing: 1.3px;
+
+  &--white {
+    color: $white !important;
+
+    &::placeholder {
+      color: $white !important;
+    }
+  }
+}
+
 .form-doc__input {
   line-height: 12px;
-  padding: 9px 10px 9px 50px;
+  padding: 9px 10px 15px 50px;
   display: block;
   width: 100%;
   min-height: 25px;
@@ -31,7 +77,15 @@
   border-bottom: 1px solid #f9ad8d;
   background: transparent;
   color: $white;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
+
+  &--white {
+    color: $white !important;
+
+    &::placeholder {
+      color: $white !important;
+    }
+  }
 
   &:focus,
   &:hover {

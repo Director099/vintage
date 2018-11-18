@@ -6,6 +6,10 @@
   font-size: 10px;
   line-height: 16px;
   cursor: pointer;
+
+  &--black {
+    color: $black;
+  }
 }
 
 .form-checkbox input {
@@ -41,5 +45,9 @@
     background: #cb937f;
     border-radius: 50%;
     transition: $time;
+  }
+
+  &--white {
+    background-color: #e8e8e8;
   }
 }

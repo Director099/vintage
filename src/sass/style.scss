@@ -7,9 +7,6 @@
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
-// My style
-
-
 // @import "grid-mixins";
 
 @import "functions";
@@ -22,6 +19,10 @@
 @import "src/blocks/companents/form-doc/form-doc";
 @import "src/blocks/companents/btn/btn";
 @import "src/blocks/companents/form-checkbox/form-checkbox";
+@import "src/blocks/companents/scroll-down/scroll-down";
+@import "src/blocks/companents/field-file/field-file";
+@import "src/blocks/companents/breadcrumbs/breadcrumbs";
+@import "src/blocks/companents/table/table";
 
 @import "src/blocks/project/page-header/page-header";
 @import "src/blocks/project/page-footer/page-footer";
@@ -35,4 +36,14 @@
 @import "src/blocks/project/all-service/all-service";
 @import "src/blocks/project/rubric/rubric";
 @import "src/blocks/project/service/service";
-
+@import "src/blocks/project/callback/callback";
+@import "src/blocks/project/result/result";
+@import "src/blocks/project/gallary/gallary";
+@import "src/blocks/project/contact/contact";
+@import "src/blocks/project/rubric-nav/rubric-nav";
+@import "src/blocks/project/social/social";
+@import "src/blocks/project/application/application";
+@import "src/blocks/project/block-img/block-img";
+@import "src/blocks/project/form-mess/form-mess";
+@import "src/blocks/project/single-header/single-header";
+@import "src/blocks/project/price/price";

@@ -1,0 +1,15 @@
+.social {
+  @include ul-none();
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+
+.social__link {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.social__link svg {
+  fill: #e59c7d;
+}

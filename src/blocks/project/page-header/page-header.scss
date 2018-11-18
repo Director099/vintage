@@ -1,6 +1,6 @@
 .page-header {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 87px;
 }
 
 .page-header {
@@ -14,12 +14,24 @@
 }
 
 .page-header__btn {
-  padding: 9.5px 43px 9.5px 15px;
+  position: relative;
+  padding: 9.5px 46px 9.5px 15px;
   font-size: 14px;
   background: $white;
   border-radius: 50px;
   border: none;
   margin-right: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -8.5px;
+    width: 17px;
+    height: 17px;
+    background: url("../img/sprite/menu.svg") no-repeat center / contain;
+  }
 }
 
 .page-header__navigation {
@@ -36,5 +48,5 @@
   color: $white;
   text-decoration: none;
   font-size: 12px;
-  padding: 10px;
+  padding: 10px 14px;
 }

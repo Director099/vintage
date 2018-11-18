@@ -1,0 +1,69 @@
+.contact {
+
+}
+
+.contact__adress {
+  position: relative;
+  font: 400 16px $neumann;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  color: #333333;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 13px;
+    height: 18px;
+    background: url("../img/pin.png") no-repeat center / contain;
+  }
+}
+
+.contact__adress span {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+  font-family: $gilroy;
+}
+
+.contact__phone {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  padding-left: 25px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: #333333;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/phone.png") no-repeat center / contain;
+  }
+}
+
+.contact__time {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  padding-left: 25px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: #333333;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/clock.png") no-repeat center / contain;
+  }
+}

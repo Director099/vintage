@@ -1,7 +1,12 @@
 .all-service {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 68px;
+  padding-bottom: 71px;
   background: url("../img/assorted-bg.jpg") no-repeat center / cover;
+
+  &--none {
+    padding: 0;
+    background: none;
+  }
 }
 
 .all-service__title-center {
@@ -16,8 +21,7 @@
     content: "";
     display: inline-block;
     vertical-align: text-top;
-    width: 100%;
-    max-width: 175px;
+    width: 25%;
     height: 1px;
     margin-top: 6px;
     background: #e59c7d;

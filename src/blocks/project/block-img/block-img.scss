@@ -1,0 +1,25 @@
+.block-img {
+  position: relative;
+  width: 493px;
+  height: 529px;
+  margin-left: auto;
+  margin-top: -18px;
+}
+
+.block-img img {
+  width: 328px;
+  height: 395px;
+  object-fit: cover;
+}
+
+.block-img__one {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.block-img__two {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

@@ -4,7 +4,7 @@ block meta
   title Главная
 block header
   .fullpage
-    .container
+    .container.fullpage__container
       +page-header()
       section.main-block
         h1.main-block__title Сеть ателье #[span.main-block__size «Винтаж»]
@@ -12,22 +12,26 @@ block header
         form.form-callback
           label.form-doc.form-doc--tel.form-callback__mb-tel
             input.form-doc__input(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
-          button.btn.form-callback__mb Обсудить заказ
+          button.btn.form-callback__btn Обсудить заказ
           label.form-checkbox
             input(type="checkbox" required="" checked)
             span.form-checkbox__check(aial-label="Согласие на обработку данных")
             span.form-checkbox__text Отправляя данные вы даете свое согласие  на обработку персональных данных
+      a.scroll-down(href="#description") Узнать больше
 block content
   main
-    .description
+    .description(id="description")
       .container
-        .row
+        .row.description__ident
           .col-md-6
-            h2.title.title--page #[span Ателье] по&nbsp;ремонту и пошиву одежды в&nbsp;Уфе
+            h2.title.title--page #[span Ателье] по ремонту и #[br] пошиву одежды в&nbsp;Уфе
             p На рынке услуг мы работаем 10 лет В этом году у нас юбилей. Все сотрудники имеют высшее образование, мы инженеры- технологи швейных изделий. Наши сотрудники имеют высшее образование инженеров-технологов швейного производства.
             p Коллектив ателье небольшой, но везде успевающий - вся работа постоянно находится под контролем. Мы любим наших клиентов. Некоторые клиенты для нас уже больше чем постоянные - как родные, делятся секретами и обсуждают семейные дела.
             p У ателье очень удобное расположение, наши услуги пользуются популярностью в городе и особенно ценятся жителями Зеленой Рощи.
           .col-md-6
+            .block-img
+              img.block-img__one(src="img/img-2.jpg" alt="Изображение")
+              img.block-img__two(src="img/img-1.jpg" alt="Изображение")
         ul.advantages
           li.col-md-3
             .advantages__item
@@ -72,4 +76,3 @@ block content
               a.btn.service__link(href="rubrick.html") Узнать подробнее
 block footer
   +page-footer()
-  +developer()

@@ -1,0 +1,45 @@
+.application {
+
+}
+
+.application__title {
+  margin-bottom: 33px;
+}
+
+.application__phone {
+  position: relative;
+  display: inline-block;
+  color: #333333;
+  font: 400 30px/25px $neumann;
+  text-decoration: none;
+  padding-left: 36px;
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e59c7d;
+
+  &--white {
+    color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 27px;
+    height: 27px;
+    background: url("../img/big-phone.png") no-repeat center/contain;
+  }
+}
+
+.application__text {
+  font: 300 24px/36px $gilroy;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.application__text span {
+  color: #e59c7d;
+}

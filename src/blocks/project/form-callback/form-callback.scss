@@ -1,9 +1,16 @@
 .form-callback {
   max-width: 255px;
+
+  &--width {
+    max-width: 555px;
+  }
 }
 
-.form-callback__mb {
-  margin-bottom: 20px;
+.form-callback__btn {
+  margin-bottom: 28px;
+  display: block;
+  width: 100%;
+  padding: 19px;
 }
 
 .form-callback__mb-tel {

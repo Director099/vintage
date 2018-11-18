@@ -14,12 +14,11 @@ $field-padding-horizontal:    0.7em !default;
 .table {
 
   $block-name:                &; // #{$block-name}__element
-
-  display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 87px;
   overflow-x: auto;
-  border: 1px solid $border-color;
+  background-color: transparent;
+  border-collapse: collapse;
 
   table {
     margin: 0;
@@ -30,17 +29,25 @@ $field-padding-horizontal:    0.7em !default;
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
+    padding: 13.5px .7em;
     vertical-align: top;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 10px solid $white;
+    border-top: 0px solid $white;
+    font-size: 18px;
+
 
     &:not(:first-child) {
-      border-left: 1px solid $border-color;
+      // border-left: 1px solid $border-color;
     }
   }
 
   th {
     text-align: left;
+    font-weight: 400;
+  }
+
+  td {
+    background: #fbfbfb;
   }
 
   tbody,
@@ -59,6 +66,10 @@ $field-padding-horizontal:    0.7em !default;
         // stylelint-enable
       }
     }
+  }
+
+  thead {
+    background: #efefef;
   }
 
   caption {

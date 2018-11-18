@@ -15,6 +15,7 @@
   color: $white;
   border-radius: 50px;
   cursor: pointer;
+  letter-spacing: 3px;
   border: none;
   background: linear-gradient(to top, #896358 0%, #dfa579 99%, #dfa579 100%);
   box-shadow: 0 4px 0 #543b32, 0 0 59px rgba(249, 173, 141, 0.16);
@@ -25,9 +26,5 @@
     // color: $text-color;
     // background-color: darken($gray-lightest, 10%);
     // border-color: darken($gray-lighter, 12%);
-  }
-
-  &:visited {
-    color: $text-color;
   }
 }

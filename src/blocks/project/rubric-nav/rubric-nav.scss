@@ -1,0 +1,12 @@
+.rubric-nav {
+  @include ul-none();
+  display: flex;
+  margin-left: -12.5px;
+}
+
+.rubric-nav__link {
+  padding: 5px 12.5px;
+  text-decoration: underline;
+  color: #333333;
+  font-size: 14px;
+}

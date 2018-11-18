@@ -1,0 +1,89 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  .single-header
+    .container
+      +page-header()
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="rubrick.html") Ремонт одежды
+        li.breadcrumbs__item.breadcrumbs__item--current
+          span.breadcrumbs__link Услуга ремонта
+      section.main-block.main-block--width
+        h1.main-block__title Ремонт одежды #[span в Уфе]
+        p.main-block__tagline Ремонт и реставрация одежды любой сложности в ателье «Винтаж»
+        form.form-callback.form-callback--width
+          .row
+            .col-md-6
+              label.form-doc.form-doc--tel.form-callback__mb-tel
+                input.form-doc__input(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+            .col-md-6
+              button.btn.form-callback__btn Обсудить заказ
+          label.form-checkbox
+            input(type="checkbox" required="" checked)
+            span.form-checkbox__check(aial-label="Согласие на обработку данных")
+            span.form-checkbox__text Отправляя данные вы даете свое согласие  на обработку персональных данных
+block content
+  main
+    .description(id="description")
+      .container
+        .row.description__ident
+          .col-md-6
+            h2.title.title--page #[span Заголовок] текста о #[br] ремонте одежды
+            p Текст о ремонте одежды в Уфе. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
+            p Sed finibus luctus odio quis egestas. In ligula est, consectetur ut auctor ut, facilisis eu quam. Donec porttitor nisi erat, non rutrum ipsum semper eu. Suspendisse aliquam maximus nisl. Cras sit amet urna maximus, tincidunt
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
+          .col-md-6
+            .block-img
+              img.block-img__one(src="img/img-3.jpg" alt="Изображение")
+              img.block-img__two(src="img/img-4.jpg" alt="Изображение")
+        ul.advantages
+          li.col-md-3
+            .advantages__item
+              strong.advantages__text Ремонт одежды:
+              p.advantages__time 1-3 дня
+          li.col-md-3
+            .advantages__item
+              strong.advantages__text Срочный ремонт:
+              p.advantages__time 30 минут
+          li.col-md-3
+            .advantages__item
+              strong.advantages__text Пошив одежды:
+              p.advantages__time 11 - 14 дней
+          li.col-md-3
+            .advantages__item
+              strong.advantages__text Срочный пошив:
+              p.advantages__time 1-7 дней
+    .all-service.all-service--none
+      .container
+        .rubric
+          .col-md-4
+            section.service(style="background-image: url('img/service-1.jpg')")
+              h3.service__title Ремонт сумок
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+          .col-md-4
+            section.service(style="background-image: url('img/service-2.jpg')")
+              h3.service__title Ремонт одежды
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+          .col-md-4
+            section.service(style="background-image: url('img/service-3.jpg')")
+              h3.service__title Пошив одежды
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+          .col-md-4
+            section.service(style="background-image: url('img/service-4.jpg')")
+              h3.service__title Ремонт кожи и меха
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+          .col-md-4
+            section.service(style="background-image: url('img/service-5.jpg')")
+              h3.service__title Подгонка по фигуре
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+          .col-md-4
+            section.service(style="background-image: url('img/service-5.jpg')")
+              h3.service__title Подгонка по фигуре
+              a.btn.service__link(href="usluga.html") Узнать подробнее
+block footer
+  +page-footer()
