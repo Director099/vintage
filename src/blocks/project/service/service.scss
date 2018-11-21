@@ -32,7 +32,11 @@
   display: block;
   text-align: center;
   margin: 0 0 20px;
-  font: 400 30px $neumann;
+  font: 400 22px $neumann;
+
+  @media(min-width: $screen-lg) {
+    font-size: 30px;
+  }
 }
 
 .service__link {

@@ -1,7 +1,7 @@
 .title {
   display: inline-block;
   position: relative;
-  font: 400 36px/48px $neumann;
+  font: 400 26px/38px $neumann;
   margin-top: 0;
   margin-bottom: 20px;
   color: $color-main;
@@ -34,6 +34,11 @@
       height: 1px;
       background: #e59c7d;
     }
+  }
+
+  @media(min-width: $screen-lg) {
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 

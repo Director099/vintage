@@ -1,18 +1,29 @@
 .contact-header {
   text-align: right;
+  margin-left: auto;
 }
 
 .contact-header__tel {
   display: block;
-  font: 400 16px $neumann;
+  font: 400 12px $neumann;
   text-decoration: none;
   color: $white;
+
+  @media(min-width: $screen-sm) {
+    font-size: 16px;
+  }
 }
 
 .contact-header__call {
   display: block;
-  font-size: 14px;
+  font-size: 9px;
+  line-height: 16px;
   font-weight: 300;
   color: #d6977e;
   text-decoration: underline;
+
+  @media(min-width: $screen-sm) {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }

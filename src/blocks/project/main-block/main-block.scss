@@ -7,9 +7,13 @@
 }
 
 .main-block__title {
-  font: 400 52px $neumann;
+  font: 400 32px $neumann;
   color: $white;
   margin-bottom: 15px;
+
+  @media(min-width: $screen-lg) {
+    font-size: 52px;
+  }
 }
 
 .main-block__title span {
@@ -17,8 +21,12 @@
 }
 
 .main-block__size {
-  font-size: 68px;
+  font-size: 32px;
   line-height: 1;
+
+  @media(min-width: $screen-lg) {
+    font-size: 68px;
+  }
 }
 
 .main-block__tagline {

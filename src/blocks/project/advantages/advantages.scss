@@ -5,7 +5,12 @@
 
 .advantages__item {
   padding-left: 80px;
+  margin-bottom: 40px;
   background: url("../img/success.png") no-repeat left center /contain;
+
+  @media(min-width: $screen-xl) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__text {

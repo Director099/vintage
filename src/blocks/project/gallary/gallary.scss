@@ -110,7 +110,11 @@
 
 .gallary .owl-nav .owl-prev {
   @include arrow();
-  left: -73px;
+  left: -20px;
+
+  @media(min-width: 1340px) {
+    left: -73px;
+  }
 }
 
 .gallary .owl-nav  {
@@ -119,5 +123,9 @@
 
 .gallary .owl-nav .owl-next {
   @include arrow();
-  right: -73px;
+  right: -20px;
+
+  @media(min-width: 1340px) {
+    right: -73px;
+  }
 }
