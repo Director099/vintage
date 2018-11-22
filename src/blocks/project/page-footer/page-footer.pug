@@ -37,7 +37,7 @@ mixin page-footer()
                 })
             label.form-checkbox.form-checkbox--black
               input(type="checkbox" required="" checked)
-              span.form-checkbox__check.form-checkbox__check--white(aial-label="Согласие на обработку данных")
+              span.form-checkbox__check.form-checkbox__check--white(aria-label="Согласие на обработку данных")
               span.form-checkbox__text.form-mess__size Отправляя данные вы даете свое согласие  на обработку персональных данных
   .result
     .container
@@ -66,19 +66,19 @@ mixin page-footer()
   footer.page-footer
     .container
       .row.page-footer__ident
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Верхнеторговая площадь, 6 #[span (БЦ Нестеров)]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             span.contact__time Время работы: 10:00-19:00
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Менделеева, 7/3 #[span (в здании магазина "Старая Уфа")]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             span.contact__time Время работы: 10:00-19:00
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Зубово, Серебряная, 91 #[span (в здании супермаркета)]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15

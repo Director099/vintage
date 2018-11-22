@@ -1,7 +1,7 @@
 extends pug/layout.pug
 
 block meta
-  title Главная
+  title Услуга
 block header
   .single-header.single-header--service
     .container
@@ -25,7 +25,7 @@ block header
               button.btn.form-callback__btn Обсудить заказ
           label.form-checkbox
             input(type="checkbox" required="" checked)
-            span.form-checkbox__check(aial-label="Согласие на обработку данных")
+            span.form-checkbox__check(aria-label="Согласие на обработку данных")
             span.form-checkbox__text Отправляя данные вы даете свое согласие  на обработку персональных данных
 block content
   main
@@ -104,13 +104,11 @@ block content
               td от 500 руб
               td от 900 руб
               td от 1300 руб
-          thead
             tr
               th Замена
               th 1-я категория
               th 2-я категория
               th 3-я категория
-          tbody
             tr
               td Молнии:
               td от 500 руб
@@ -121,13 +119,11 @@ block content
               td от 500 руб
               td от 900 руб
               td от 1300 руб
-          thead
             tr
               th Замена
               th 1-я категория
               th 2-я категория
               th 3-я категория
-          tbody
             tr
               td Молнии:
               td от 500 руб
@@ -178,7 +174,7 @@ block footer
                 })
             label.form-checkbox
               input(type="checkbox" required="" checked)
-              span.form-checkbox__check.form-checkbox__check--white(aial-label="Согласие на обработку данных")
+              span.form-checkbox__check.form-checkbox__check--white(aria-label="Согласие на обработку данных")
               span.form-checkbox__text.form-mess__size Отправляя данные вы даете свое согласие  на обработку персональных данных
   footer.page-footer
     .container

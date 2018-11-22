@@ -1101,7 +1101,8 @@ img {
 .scroll-down {
   display: none; }
 .field-file {
-  display: block; }
+  display: block;
+  margin-top: 20px; }
 .field-file__input-wrap {
     display: block;
     position: relative; }
@@ -1187,7 +1188,8 @@ img {
     font-size: 18px; }
 .table th {
     text-align: left;
-    font-weight: 400; }
+    font-weight: 400;
+    background: #efefef; }
 .table td {
     background: #fbfbfb; }
 .table tbody:last-child tr:last-child td,
@@ -1197,8 +1199,6 @@ img {
   .table tfoot:last-child tr:last-child td,
   .table tfoot:last-child tr:last-child th {
     border-bottom: 0; }
-.table thead {
-    background: #efefef; }
 .table caption {
     caption-side: top;
     text-align: left;
@@ -1246,8 +1246,6 @@ img {
 .page-footer {
   padding-top: 50px;
   padding-bottom: 33px; }
-.page-footer__ident {
-  margin-bottom: 30px; }
 .page-footer__center {
   align-items: center; }
 .developer {
@@ -1508,6 +1506,8 @@ img {
   color: white !important;
   font-size: 40px !important;
   right: -20px; }
+.contact {
+  margin-bottom: 30px; }
 .contact__adress {
   position: relative;
   font: 400 16px "Neumann", "Arial", sans-serif;
@@ -1565,7 +1565,9 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
-  margin-left: -12.5px; }
+  flex-wrap: wrap;
+  margin-left: -12.5px;
+  margin-bottom: 20px; }
 .rubric-nav__link {
   padding: 5px 12.5px;
   text-decoration: underline;
@@ -1587,12 +1589,13 @@ img {
   margin-bottom: 33px; }
 .application__phone {
   position: relative;
-  display: inline-block;
+  display: block;
+  max-width: 220px;
   color: #333333;
-  font: 400 30px/25px "Neumann", "Arial", sans-serif;
+  font: 400 20px/25px "Neumann", "Arial", sans-serif;
   text-decoration: none;
   padding-left: 36px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-bottom: 32px;
   border-bottom: 1px solid #e59c7d; }
 .application__phone--white {
@@ -1602,11 +1605,11 @@ img {
     position: absolute;
     left: 0;
     top: 0px;
-    width: 27px;
+    width: 20px;
     height: 27px;
     background: url("../img/big-phone.png") no-repeat center/contain; }
 .application__text {
-  font: 300 24px/36px "Gilroy", "Arial", sans-serif; }
+  font: 300 18px/26px "Gilroy", "Arial", sans-serif; }
 .application__text--white {
     color: white; }
 .application__text span {
@@ -2270,6 +2273,9 @@ img {
   .developer__text{
     margin-bottom: 0px;
   }
+  .rubric-nav{
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 992px){
   .container{
@@ -2550,6 +2556,9 @@ img {
     font-size: 36px;
     line-height: 48px;
   }
+  .field-file{
+    margin-top: 0;
+  }
   .page-header__list-nav{
     display: flex;
   }
@@ -2587,6 +2596,19 @@ img {
   .result__title-center .title{
     flex-shrink: 0;
     padding: 0 40px;
+  }
+  .application__phone{
+    display: inline-block;
+    max-width: 100%;
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  .application__phone::after{
+    width: 27px;
+  }
+  .application__text{
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 @media (min-width: 1200px){

@@ -8,12 +8,13 @@
 
 .application__phone {
   position: relative;
-  display: inline-block;
+  display: block;
+  max-width: 220px;
   color: #333333;
-  font: 400 30px/25px $neumann;
+  font: 400 20px/25px $neumann;
   text-decoration: none;
   padding-left: 36px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-bottom: 32px;
   border-bottom: 1px solid #e59c7d;
 
@@ -26,17 +27,33 @@
     position: absolute;
     left: 0;
     top: 0px;
-    width: 27px;
+    width: 20px;
     height: 27px;
     background: url("../img/big-phone.png") no-repeat center/contain;
+  }
+
+  @media(min-width: $screen-lg) {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 30px;
+    padding-bottom: 40px;
+
+    &::after {
+      width: 27px;
+    }
   }
 }
 
 .application__text {
-  font: 300 24px/36px $gilroy;
+  font: 300 18px/26px $gilroy;
 
   &--white {
     color: $white;
+  }
+
+  @media(min-width: $screen-lg) {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
