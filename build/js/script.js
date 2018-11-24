@@ -340,7 +340,7 @@ $('.gallary').owlCarousel({
   }
 })
 
-$(".page-header__btn").hover(function() {
+$(".page-header__btn").on("click", function() {
   $("body").css("overflow", "hidden");
   $(".menu").fadeIn();
 })
