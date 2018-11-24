@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   background: $white;
   overflow: auto;
   display: none;
@@ -12,8 +12,6 @@
 
 .menu__close {
   position: relative;
-  // display: inline-block;
-  // vertical-align: baseline;
   width: 22px;
   height: 22px;
   padding: 0;
@@ -117,17 +115,24 @@
 
 .menu__navigation-list {
   @include ul-none();
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+
+  @media(min-width: $screen-md) {
+    border: none;
+  }
 }
 
 .menu__navigation-drop {
   display: none;
   width: 100%;
-  opacity: 0;
-  transition: $time;
+  opacity: 1;
   border: 1px solid #E7E7E7;
   @include ul-none();
 
   @media(min-width: $screen-md) {
+    opacity: 0;
+    transition: $time;
     position: absolute;
     top: -1px;
     left: 325px;
@@ -162,7 +167,6 @@
 
 .menu__navigation-item:hover > .menu__navigation-drop {
   opacity: 1;
-  display: block;
 }
 
 .menu__navigation-link {
@@ -173,6 +177,50 @@
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
+
+  &--none-xl {
+    position: relative;
+
+    &.active {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        width: 7px;
+        height: 7px;
+        border-right: 1px solid #595959;
+        border-bottom: 1px solid #595959;
+        transform: rotate(-135deg) translateY(-50%);
+        transition: $time;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 35px;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid #595959;
+      border-bottom: 1px solid #595959;
+      transform: rotate(45deg) translateY(-50%);
+      transition: $time;
+    }
+
+    @media(min-width: $screen-md) {
+      pointer-events: none;
+
+      &::after {
+        transform: rotate(-45deg) translateY(-50%);
+      }
+    }
+
+    @media(min-width: $screen-xl) {
+      pointer-events: auto;
+    }
+  }
 }
 
 .menu__contact-header {

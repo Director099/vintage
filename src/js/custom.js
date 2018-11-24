@@ -8,6 +8,17 @@
 
 $('input[type=tel]').mask("+7 (000) 000 00 00");
 
+$(document).ready(function() {
+    var windowWidth = $(window).width();
+    if(windowWidth < 768) {
+      $('.menu__navigation-link--none-xl').click( function(evt) {
+        $(evt.target).toggleClass("active")
+        $(this).siblings(".menu__navigation-drop").slideToggle("slow");
+        return false;
+      });
+    }
+});
+
 // Плавный скол с навигации
 function scroll(element) {
   element.click(function () {
@@ -51,7 +62,7 @@ $('.gallary').owlCarousel({
   }
 })
 
-$(".page-header__btn").on("click", function() {
+$(".page-header__btn").hover(function() {
   $("body").css("overflow", "hidden");
   $(".menu").fadeIn();
 })
