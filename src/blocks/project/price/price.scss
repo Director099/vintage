@@ -1,0 +1,29 @@
+.price {
+  padding-top: 60px;
+}
+
+.price__title {
+  position: relative;
+  margin-bottom: 18px;
+
+  @media(min-width: $screen-md) {
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: text-top;
+      width: 41px;
+      height: 1px;
+      margin-top: 0px;
+      margin-right: 12px;
+      background: #e59c7d;
+    }
+  }
+}
+
+.price__responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

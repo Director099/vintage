@@ -20,6 +20,7 @@ var concat = require('gulp-concat'); // Конкатинация
 var uglify = require('gulp-uglify'); // минификация js
 var pug = require('gulp-pug'); // pug
 var atImport = require("postcss-import"); // Импорт стороним плагином чтоб избежать ошибки
+var tinify = require('gulp-tinypng');
 
 gulp.task('clean', function() {
   return del(dirs.build);
@@ -159,3 +160,9 @@ function reload(done) {
   server.reload();
   done();
 }
+
+gulp.task('tinify', function() {
+    return gulp.src('src/img/**/*.{png,jpg}')
+      .pipe(tinify('q2jg3LuY5Bktm617swAOD7nk3X3Mc8OH'))
+      .pipe(gulp.dest('build/new-img'));
+});

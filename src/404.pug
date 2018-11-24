@@ -3,8 +3,14 @@ extends pug/layout.pug
 block meta
   title 404 ошибка
 block header
-  .container
-    +page-header()
+  .not-found
+    .container
+      +page-header()
+      .not-found__block
+        img.not-found__img(src="img/404-error.png" alt="Страница не найдена")
+        h1.title.not-found__title Страница не найдена
+        p Вероятнее всего, вы перешли на несуществующую страницу
+        a.btn.not-found__btn(href="index.html") Вернуться
 block content
-  main
+  //- main
 block footer

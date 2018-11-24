@@ -47,7 +47,8 @@
   },
   "scripts": {
     "start": "gulp build && gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "tin": "gulp tinify"
   },
   "license": "ISC"
 }

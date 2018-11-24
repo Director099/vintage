@@ -8,6 +8,10 @@
   align-items: flex-start;
   justify-content: space-between;
 
+  &--ident {
+    padding-bottom: 35px;
+  }
+
   @media(min-width: $screen-md) {
     align-items: center;
   }
@@ -39,7 +43,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background: url("../img/sprite/menu.svg") no-repeat center / contain;
+    background: url("../img/sprite/menu-white.svg") no-repeat center / contain;
   }
 
   @media(min-width: $screen-md) {
@@ -60,6 +64,7 @@
       margin-top: -8.5px;
       width: 17px;
       height: 17px;
+      background: url("../img/sprite/menu.svg") no-repeat center / contain;
     }
   }
 }

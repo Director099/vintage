@@ -1,6 +1,8 @@
 .contact-header {
+  // position: relative;
   text-align: right;
   margin-left: auto;
+  // z-index: 1;
 }
 
 .contact-header__tel {
@@ -8,6 +10,10 @@
   font: 400 12px $neumann;
   text-decoration: none;
   color: $white;
+
+  &--black {
+    color: $black;
+  }
 
   @media(min-width: $screen-sm) {
     font-size: 16px;

@@ -280,13 +280,18 @@ h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
 $('input[type=tel]').mask("+7 (000) 000 00 00");
 
 // Плавный скол с навигации
+function scroll(element) {
+  element.click(function () {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+    return false;
+  });
+}
 
-/* $(".scrollto > a").click(function () {
-  var elementClick = $(this).attr("href")
-  var destination = $(elementClick).offset().top;
-  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-  return false;
-}); */
+scroll($(".contact-header__call"))
+scroll($(".scroll-down"))
+scroll($(".page-header__list-link"))
 
 // Плавный скол с навигации
 
@@ -315,6 +320,17 @@ $('.gallary').owlCarousel({
       items: 3
     }
   }
+})
+
+$(".page-header__btn").on("click", function() {
+  $("body").css("overflow", "hidden");
+  $(".menu").fadeIn();
+
+})
+
+$(".menu__close").on("click", function() {
+  $(".menu").fadeOut();
+  $("body").css("overflow", "auto");
 })
 
 ;( function ()

@@ -10,6 +10,10 @@
   &--black {
     color: $black;
   }
+
+  &--width {
+    max-width: 245px;
+  }
 }
 
 .form-checkbox input {

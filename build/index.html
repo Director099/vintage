@@ -24,14 +24,61 @@
   </head>
   <body>
     <div class="fullpage">
+      <div class="menu">
+        <div class="menu__line">
+          <div class="container menu__row">
+            <button class="menu__close" aria-label="Закрытие меню"></button>
+            <h2 class="title menu__title">Каталог услуг</h2>
+            <div class="contact-header menu__contact-header"><a class="contact-header__tel contact-header__tel--black" href="tel:+7(347)266-93-15">+7 (347) 266-93-15</a></div>
+          </div>
+        </div>
+        <div class="container menu__container">
+          <nav class="menu__navigation">
+            <ul class="menu__navigation-list">
+              <li class="menu__navigation-item"><a class="menu__navigation-link">Ремонт одежды</a>
+                <ul class="menu__navigation-drop">
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Джинсы</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Брюки</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Платье</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Рубашка</a></li>
+                </ul>
+              </li>
+              <li class="menu__navigation-item"><a class="menu__navigation-link">Ремонт сумок</a>
+                <ul class="menu__navigation-drop">
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Джинсы</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Брюки</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Платье</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Рубашка</a></li>
+                </ul>
+              </li>
+              <li class="menu__navigation-item"><a class="menu__navigation-link">Ремонт кожи и меха</a>
+                <ul class="menu__navigation-drop">
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Джинсы</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Брюки</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Платье</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Рубашка</a></li>
+                </ul>
+              </li>
+              <li class="menu__navigation-item"><a class="menu__navigation-link">Пошив</a>
+                <ul class="menu__navigation-drop">
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Джинсы</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Брюки</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Платье</a></li>
+                  <li class="menu__navigation-item menu__navigation-item--grey"><a class="menu__navigation-link" href="#">Рубашка</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="container fullpage__container">
         <div class="page-header"><a class="page-header__logo" href="index.html"><img src="img/logo.png" alt="Сеть ателье «Винтаж»"/></a>
           <button class="page-header__btn">Каталог услуг</button>
           <ul class="page-header__list-nav">
-            <li class="page-header__list-item"><a class="page-header__list-link" href="#">Наши работы</a></li>
-            <li class="page-header__list-item"><a class="page-header__list-link" href="#">Адреса филиалов</a></li>
+            <li class="page-header__list-item"><a class="page-header__list-link" href="#jobs">Наши работы</a></li>
+            <li class="page-header__list-item"><a class="page-header__list-link" href="#address">Адреса филиалов</a></li>
           </ul>
-          <div class="contact-header"><a class="contact-header__tel" href="tel:+7(347)266-93-15">+7 (347) 266-93-15</a><a class="contact-header__call">оформить заказ</a></div>
+          <div class="contact-header"><a class="contact-header__tel" href="tel:+7(347)266-93-15">+7 (347) 266-93-15</a><a class="contact-header__call" href="#callback">оформить заказ</a></div>
         </div>
         <section class="main-block">
           <h1 class="main-block__title">Сеть ателье <span class="main-block__size">«Винтаж»</span></h1>
@@ -42,7 +89,7 @@
             </label>
             <button class="btn form-callback__btn">Обсудить заказ</button>
             <label class="form-checkbox">
-              <input type="checkbox" required="" checked><span class="form-checkbox__check" aria-label="Согласие на обработку данных"></span><span class="form-checkbox__text">Отправляя данные вы даете свое согласие  на обработку персональных данных</span>
+              <input type="checkbox" required="" checked><span class="form-checkbox__check" aria-label="Согласие на обработку данных"></span><span class="form-checkbox__text">Отправляя данные вы&nbsp;даете свое согласие на&nbsp;обработку персональных данных</span>
             </label>
           </form>
         </section><a class="scroll-down" href="#description">Узнать больше</a>
@@ -53,7 +100,7 @@
         <div class="container">
           <div class="row description__ident">
             <div class="col-lg-6">
-              <h2 class="title title--page"><span>Ателье</span> по ремонту и <br> пошиву одежды в&nbsp;Уфе</h2>
+              <h2 class="title title--page description__title"><span>Ателье</span> по ремонту и пошиву одежды в&nbsp;Уфе</h2>
               <p>На рынке услуг мы работаем 10 лет В этом году у нас юбилей. Все сотрудники имеют высшее образование, мы инженеры- технологи швейных изделий. Наши сотрудники имеют высшее образование инженеров-технологов швейного производства.</p>
               <p>Коллектив ателье небольшой, но везде успевающий - вся работа постоянно находится под контролем. Мы любим наших клиентов. Некоторые клиенты для нас уже больше чем постоянные - как родные, делятся секретами и обсуждают семейные дела.</p>
               <p>У ателье очень удобное расположение, наши услуги пользуются популярностью в городе и особенно ценятся жителями Зеленой Рощи.</p>
@@ -121,7 +168,7 @@
         </div>
       </div>
     </main>
-    <div class="callback">
+    <div class="callback" id="callback">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -169,7 +216,7 @@
         </div>
       </div>
     </div>
-    <div class="result">
+    <div class="result" id="jobs">
       <div class="container">
         <div class="result__title-center">
           <h2 class="title title--white">Посмотрите <span>результат</span> наших работ</h2>
@@ -187,7 +234,7 @@
             </div></a></div>
       </div>
     </div>
-    <footer class="page-footer">
+    <footer class="page-footer" id="address">
       <div class="container">
         <div class="row page-footer__ident">
           <div class="col-sm-6 col-md-4">

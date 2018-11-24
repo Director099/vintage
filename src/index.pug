@@ -4,6 +4,7 @@ block meta
   title Главная
 block header
   .fullpage
+    +menu()
     .container.fullpage__container
       +page-header()
       section.main-block
@@ -16,7 +17,7 @@ block header
           label.form-checkbox
             input(type="checkbox" required="" checked)
             span.form-checkbox__check(aria-label="Согласие на обработку данных")
-            span.form-checkbox__text Отправляя данные вы даете свое согласие  на обработку персональных данных
+            span.form-checkbox__text Отправляя данные вы&nbsp;даете свое согласие на&nbsp;обработку персональных данных
       a.scroll-down(href="#description") Узнать больше
 block content
   main
@@ -24,7 +25,7 @@ block content
       .container
         .row.description__ident
           .col-lg-6
-            h2.title.title--page #[span Ателье] по ремонту и #[br] пошиву одежды в&nbsp;Уфе
+            h2.title.title--page.description__title #[span Ателье] по ремонту и пошиву одежды в&nbsp;Уфе
             p На рынке услуг мы работаем 10 лет В этом году у нас юбилей. Все сотрудники имеют высшее образование, мы инженеры- технологи швейных изделий. Наши сотрудники имеют высшее образование инженеров-технологов швейного производства.
             p Коллектив ателье небольшой, но везде успевающий - вся работа постоянно находится под контролем. Мы любим наших клиентов. Некоторые клиенты для нас уже больше чем постоянные - как родные, делятся секретами и обсуждают семейные дела.
             p У ателье очень удобное расположение, наши услуги пользуются популярностью в городе и особенно ценятся жителями Зеленой Рощи.

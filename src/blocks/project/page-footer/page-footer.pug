@@ -1,5 +1,5 @@
 mixin page-footer()
-  .callback
+  .callback(id="callback")
     .container
       .row
         .col-lg-6
@@ -39,7 +39,7 @@ mixin page-footer()
               input(type="checkbox" required="" checked)
               span.form-checkbox__check.form-checkbox__check--white(aria-label="Согласие на обработку данных")
               span.form-checkbox__text.form-mess__size Отправляя данные вы даете свое согласие  на обработку персональных данных
-  .result
+  .result(id="jobs")
     .container
       .result__title-center
         h2.title.title--white Посмотрите #[span результат] наших работ
@@ -63,7 +63,7 @@ mixin page-footer()
           .gallary__desc
             strong.gallary__title Ремонт джемпера
             p.gallary__text Описание проблемы, например: оторванный по шву воротник
-  footer.page-footer
+  footer.page-footer(id="address")
     .container
       .row.page-footer__ident
         .col-sm-6.col-md-4

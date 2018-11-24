@@ -4,8 +4,9 @@ block meta
   title Услуга
 block header
   .single-header.single-header--service
+    +menu()
     .container
-      +page-header()
+      +page-header('page-header--ident')
       ul.breadcrumbs
         li.breadcrumbs__item
           a.breadcrumbs__link(href="index.html") Главная
@@ -14,8 +15,8 @@ block header
         li.breadcrumbs__item.breadcrumbs__item--current
           span.breadcrumbs__link Услуга ремонта
       section.main-block.main-block--width
-        h1.main-block__title Ремонт одежды #[span в Уфе]
-        p.main-block__tagline Ремонт и реставрация одежды любой сложности в ателье «Винтаж»
+        h1.main-block__title.main-block__title--ident Ремонт одежды #[span в Уфе]
+        p.main-block__tagline.main-block__tagline-ident Ремонт и реставрация одежды любой сложности в ателье «Винтаж»
         form.form-callback.form-callback--width
           .row
             .col-md-6
@@ -23,42 +24,42 @@ block header
                 input.form-doc__input(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
             .col-md-6
               button.btn.form-callback__btn Обсудить заказ
-          label.form-checkbox
+          label.form-checkbox.form-checkbox--width
             input(type="checkbox" required="" checked)
             span.form-checkbox__check(aria-label="Согласие на обработку данных")
-            span.form-checkbox__text Отправляя данные вы даете свое согласие  на обработку персональных данных
+            span.form-checkbox__text Отправляя данные вы&nbsp;даете свое согласие на&nbsp;обработку персональных данных
 block content
   main
     .description(id="description")
       .container
         .row.description__ident
-          .col-md-6
-            h2.title.title--page #[span Заголовок] текста о #[br] ремонте одежды
+          .col-lg-6
+            h2.title.title--page.description__title #[span Заголовок] текста о&nbsp;ремонте одежды
             p Текст о ремонте одежды в Уфе. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
             p Sed finibus luctus odio quis egestas. In ligula est, consectetur ut auctor ut, facilisis eu quam. Donec porttitor nisi erat, non rutrum ipsum semper eu. Suspendisse aliquam maximus nisl. Cras sit amet urna maximus, tincidunt
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
-          .col-md-6
+          .col-lg-6
             .block-img
               img.block-img__one(src="img/img-3.jpg" alt="Изображение")
               img.block-img__two(src="img/img-4.jpg" alt="Изображение")
         ul.advantages
-          li.col-md-3
+          li.col-md-6.col-xl-3
             .advantages__item
               strong.advantages__text Ремонт одежды:
               p.advantages__time 1-3 дня
-          li.col-md-3
+          li.col-md-6.col-xl-3
             .advantages__item
               strong.advantages__text Срочный ремонт:
               p.advantages__time 30 минут
-          li.col-md-3
+          li.col-md-6.col-xl-3
             .advantages__item
               strong.advantages__text Пошив одежды:
               p.advantages__time 11 - 14 дней
-          li.col-md-3
+          li.col-md-6.col-xl-3
             .advantages__item
               strong.advantages__text Срочный пошив:
               p.advantages__time 1-7 дней
-    .result.result--none
+    .result.result--none(id="jobs")
       .container
         .result__title-center
           h2.title Посмотрите #[span результат] наших работ
@@ -86,65 +87,66 @@ block content
       .container
         section.price__title
           h2.title Стоимость ремонта платья
-        table.table
-          thead
-            tr
-              th Замена
-              th 1-я категория
-              th 2-я категория
-              th 3-я категория
-          tbody
-            tr
-              td Молнии:
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
-            tr
-              td Подкладки::
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
-            tr
-              th Замена
-              th 1-я категория
-              th 2-я категория
-              th 3-я категория
-            tr
-              td Молнии:
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
-            tr
-              td Подкладки::
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
-            tr
-              th Замена
-              th 1-я категория
-              th 2-я категория
-              th 3-я категория
-            tr
-              td Молнии:
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
-            tr
-              td Подкладки::
-              td от 500 руб
-              td от 900 руб
-              td от 1300 руб
+        .price__responsive
+          table.table
+            thead
+              tr
+                th Замена
+                th 1-я категория
+                th 2-я категория
+                th 3-я категория
+            tbody
+              tr
+                td Молнии:
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
+              tr
+                td Подкладки::
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
+              tr
+                th Замена
+                th 1-я категория
+                th 2-я категория
+                th 3-я категория
+              tr
+                td Молнии:
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
+              tr
+                td Подкладки::
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
+              tr
+                th Замена
+                th 1-я категория
+                th 2-я категория
+                th 3-я категория
+              tr
+                td Молнии:
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
+              tr
+                td Подкладки::
+                td от 500 руб
+                td от 900 руб
+                td от 1300 руб
 
 block footer
-  .callback.callback--img
+  .callback.callback--img(id="callback")
     .container
       .row
-        .col-md-6
+        .col-lg-6
           section.application
             h2.title.title--white.application__title Оставь заявку через #[br] сайт или #[a(href="https://wa.me/79234567890") WhatsApp]
             a.application__phone.application__phone--white(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             p.application__text.application__text--white #[span Найдем] решение #[span и проконсультируем по стоимости и срокам] через 5-7 мин.
-        .col-md-6
+        .col-lg-6
           form.form-mess
             .row
               .col-md-6
@@ -176,22 +178,22 @@ block footer
               input(type="checkbox" required="" checked)
               span.form-checkbox__check.form-checkbox__check--white(aria-label="Согласие на обработку данных")
               span.form-checkbox__text.form-mess__size Отправляя данные вы даете свое согласие  на обработку персональных данных
-  footer.page-footer
+  footer.page-footer(id="address")
     .container
       .row.page-footer__ident
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Верхнеторговая площадь, 6 #[span (БЦ Нестеров)]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             span.contact__time Время работы: 10:00-19:00
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Менделеева, 7/3 #[span (в здании магазина "Старая Уфа")]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
             span.contact__time Время работы: 10:00-19:00
-        .col-md-4
+        .col-sm-6.col-md-4
           section.contact
             h3.contact__adress Зубово, Серебряная, 91 #[span (в здании супермаркета)]
             a.contact__phone(href="tel:+7(347)266-93-15") +7 (347) 266-93-15

@@ -11,6 +11,10 @@
   color: $white;
   margin-bottom: 15px;
 
+  &--ident {
+    margin-bottom: 5px;
+  }
+
   @media(min-width: $screen-lg) {
     font-size: 52px;
   }
@@ -34,4 +38,8 @@
   line-height: 32px;
   margin-bottom: 67px;
   color: $white;
+}
+
+.main-block__tagline-ident {
+  margin-bottom: 35px;
 }
