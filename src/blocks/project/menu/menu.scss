@@ -136,7 +136,6 @@
     position: absolute;
     top: -1px;
     left: 325px;
-    display: block;
   }
 }
 
@@ -165,8 +164,11 @@
   }
 }
 
-.menu__navigation-item:hover > .menu__navigation-drop {
-  opacity: 1;
+@media(min-width: $screen-md) {
+  .menu__navigation-item:hover > .menu__navigation-drop {
+    opacity: 1;
+    display: block;
+  }
 }
 
 .menu__navigation-link {

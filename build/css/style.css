@@ -1173,8 +1173,7 @@ img {
       background: url("../img/sprite/right-arrow.svg") no-repeat center/contain; }
 .table {
   width: 100%;
-  min-width: 745px;
-  margin-bottom: 87px;
+  margin-bottom: 0;
   overflow-x: auto;
   background-color: transparent;
   border-collapse: collapse; }
@@ -1186,23 +1185,21 @@ img {
 .table td,
   .table th {
     width: 21%;
-    padding: 18px;
+    padding: 10px 5px;
     vertical-align: top;
     border-bottom: 10px solid white;
     border-top: 0px solid white;
-    font-size: 18px; }
+    font-size: 12px; }
 .table th {
     text-align: left;
     font-weight: 400;
     background: #efefef; }
 .table th:first-child {
-      min-width: 100px;
-      width: 30%; }
+      min-width: 100px; }
 .table td {
     background: #fbfbfb; }
 .table td:first-child {
-      min-width: 100px;
-      width: 30%; }
+      min-width: 100px; }
 .table tbody:last-child tr:last-child td,
   .table tbody:last-child tr:last-child th,
   .table thead:last-child tr:last-child td,
@@ -1700,6 +1697,7 @@ img {
 .price__responsive {
   display: block;
   width: 100%;
+  margin-bottom: 87px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
@@ -1811,8 +1809,6 @@ img {
       border-bottom: none; }
 .menu__navigation-item:hover {
     background: #f4f4f4; }
-.menu__navigation-item:hover > .menu__navigation-drop {
-  opacity: 1; }
 .menu__navigation-link {
   display: inline-block;
   width: 100%;
@@ -2428,11 +2424,10 @@ img {
     -ms-grid-row-align: stretch !important;
     align-self: stretch !important;
   }
-  .table th:first-child{
-    padding: 18px 60px;
-  }
-  .table td:first-child{
-    padding: 18px 60px;
+  .table td,
+      .table th{
+    font-size: 18px;
+    padding: 18px;
   }
   .page-header{
     align-items: center;
@@ -2504,11 +2499,14 @@ img {
     position: absolute;
     top: -1px;
     left: 325px;
-    display: block;
   }
   .menu__navigation-item{
     max-width: 325px;
     border-right: 1px solid #E7E7E7;
+  }
+  .menu__navigation-item:hover > .menu__navigation-drop{
+    opacity: 1;
+    display: block;
   }
   .menu__navigation-link--none-xl{
     pointer-events: none;
@@ -3152,6 +3150,14 @@ img {
     height: 24px;
     opacity: 0.7;
     background: url("../img/mouse.png") no-repeat center/contain;
+  }
+  .table th:first-child{
+    padding: 18px 60px;
+    width: 30%;
+  }
+  .table td:first-child{
+    padding: 18px 60px;
+    width: 30%;
   }
   .developer{
     position: relative;

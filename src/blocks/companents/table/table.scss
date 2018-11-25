@@ -15,8 +15,8 @@ $field-padding-horizontal:    0.7em !default;
 
   $block-name:                &; // #{$block-name}__element
   width: 100%;
-  min-width: 745px;
-  margin-bottom: 87px;
+  // min-width: 745px;
+  margin-bottom: 0;
   overflow-x: auto;
   background-color: transparent;
   border-collapse: collapse;
@@ -31,15 +31,21 @@ $field-padding-horizontal:    0.7em !default;
   td,
   th {
     width: 21%;
-    padding: 18px;
+    padding: 10px 5px;
     vertical-align: top;
     border-bottom: 10px solid $white;
     border-top: 0px solid $white;
-    font-size: 18px;
+    font-size: 12px;
 
 
     &:not(:first-child) {
       // border-left: 1px solid $border-color;
+    }
+
+    @media(min-width: $screen-md) {
+      font-size: 18px;
+      padding: 18px;
+
     }
   }
 
@@ -51,10 +57,11 @@ $field-padding-horizontal:    0.7em !default;
 
     &:first-child {
       min-width: 100px;
-      width: 30%;
 
-      @media(min-width: $screen-md) {
+
+      @media(min-width: $screen-xl) {
         padding: 18px 60px;
+        width: 30%;
       }
     }
   }
@@ -64,10 +71,11 @@ $field-padding-horizontal:    0.7em !default;
 
     &:first-child {
       min-width: 100px;
-      width: 30%;
 
-      @media(min-width: $screen-md) {
+
+      @media(min-width: $screen-xl) {
         padding: 18px 60px;
+        width: 30%;
       }
     }
   }
