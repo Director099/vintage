@@ -1474,6 +1474,16 @@ img {
     color: white;
     text-transform: uppercase;
     z-index: 2; }
+.gallary__img > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  font: 400 86px/86px "Neumann", "Arial", sans-serif;
+  opacity: 0.2;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2; }
 .gallary__desc {
   position: absolute;
   bottom: 0px;
